@@ -1,0 +1,50 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: rgba(11, 20, 42, 0.775);
+    border-radius: 1rem;
+    gap: 1rem;
+    color: inherit
+}
+
+.input, .textarea {
+    outline: none;
+  appearance: none;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-family: inherit;
+  resize: none; 
+  color: #293852;
+  font-size: 1rem;
+}
+
+.input::placeholder, .textarea::placeholder {
+    color: #293852;
+    opacity: 0.9;
+
+}
+
+.input:focus, .textarea:focus {
+    outline: 0.1rem solid #007FFF;
+}
+
+.error {
+    color: red
+}
+
+.button {
+    appearance: none;
+    border: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    color: #293852;
+    background-color: white;
+}
+
+.button:hover {
+    background-color: #E0E0E0;
+}

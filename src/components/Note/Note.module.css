@@ -1,0 +1,25 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(11, 20, 42, 0.775);
+    padding: 1rem;
+    gap: 1rem;
+    border-radius: 1rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    border: none;
+    background-image: url(https://img.icons8.com/?size=100&id=71200&format=png&color=FFFFFF);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    background-color: transparent;
+}
