@@ -1,0 +1,73 @@
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: rgba(11, 20, 42, 0.775);
+    width: 35%;
+    height: fit-content;
+    z-index: 1002;
+    animation: slideIn 0.3s ease-out;
+    border-radius: 1rem;
+}
+
+.button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border: none;
+    background-image: url(https://img.icons8.com/?size=100&id=71200&format=png&color=FFFFFF);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    z-index: 1001;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-2rem) scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}

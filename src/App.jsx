@@ -3,6 +3,7 @@ import './App.css'
 import { Header } from './components/Header/Header'
 import { NoteList } from './components/NoteList/NoteList'
 import { NoteForm } from './components/NoteForm/NoteForm'
+import { Modal } from './components/Modal/Modal'
 
 const InitianalNotes = [
   { 

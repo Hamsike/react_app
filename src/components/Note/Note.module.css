@@ -5,6 +5,7 @@
     padding: 1rem;
     gap: 1rem;
     border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
 }
 
 .header {
@@ -12,9 +13,13 @@
     justify-content: space-between;
 }
 
+.buttons {
+    display: flex;
+    gap: 1rem;
+}
+
 .button {
     border: none;
-    background-image: url(https://img.icons8.com/?size=100&id=71200&format=png&color=FFFFFF);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -22,4 +27,13 @@
     height: 24px;
     cursor: pointer;
     background-color: transparent;
+}
+
+.deleteButton {
+    background-image: url(https://img.icons8.com/?size=100&id=71200&format=png&color=FFFFFF);
+
+}
+
+.editButton {
+    background-image: url(https://img.icons8.com/?size=100&id=114093&format=png&color=FFFFFF);
 }

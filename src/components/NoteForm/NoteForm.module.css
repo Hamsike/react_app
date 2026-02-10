@@ -5,28 +5,32 @@
     background-color: rgba(11, 20, 42, 0.775);
     border-radius: 1rem;
     gap: 1rem;
-    color: inherit
+    color: inherit;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
 }
 
-.input, .textarea {
+.input,
+.textarea {
     outline: none;
-  appearance: none;
-  border: 1px solid #ccc;
-  border-radius: 0.5rem;
-  padding: 1rem;
-  font-family: inherit;
-  resize: none; 
-  color: #293852;
-  font-size: 1rem;
-}
-
-.input::placeholder, .textarea::placeholder {
+    appearance: none;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-family: inherit;
+    resize: none;
     color: #293852;
-    opacity: 0.9;
+    font-size: 1rem;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+    color: #293852;
+    opacity: 0.6;
 
 }
 
-.input:focus, .textarea:focus {
+.input:focus,
+.textarea:focus {
     outline: 0.1rem solid #007FFF;
 }
 
