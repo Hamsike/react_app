@@ -20,13 +20,13 @@
     resize: none;
     color: #293852;
     font-size: 1rem;
+    z-index: 0;
 }
 
 .input::placeholder,
 .textarea::placeholder {
     color: #293852;
     opacity: 0.6;
-
 }
 
 .input:focus,
@@ -35,7 +35,7 @@
 }
 
 .error {
-    color: red
+    color: red;
 }
 
 .button {
