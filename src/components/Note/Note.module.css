@@ -6,11 +6,20 @@
     gap: 1rem;
     border-radius: 1rem;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+    width: 100%;
+    overflow-wrap: break-word;
 }
 
 .header {
     display: flex;
+    align-items: center;
     justify-content: space-between;
+}
+
+.header h2 {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    overflow: hidden;
 }
 
 .buttons {
@@ -31,7 +40,6 @@
 
 .deleteButton {
     background-image: url(https://img.icons8.com/?size=100&id=71200&format=png&color=FFFFFF);
-
 }
 
 .editButton {

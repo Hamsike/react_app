@@ -1,0 +1,23 @@
+.input {
+    outline: none;
+    appearance: none;
+    border: none;
+    outline: 1px solid rgba(11, 20, 42, 0.775);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 9.5);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-family: inherit;
+    resize: none;
+    color: #293852;
+    font-size: 1rem;
+    z-index: 0;
+}
+
+.input::placeholder {
+    color: #293852;
+    opacity: 0.6;
+}
+
+.input:focus {
+    outline: 0.1rem solid #007FFF;
+}

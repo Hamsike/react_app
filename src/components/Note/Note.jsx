@@ -15,7 +15,7 @@ export const Note = (props) => {
                         onClick={onDelete}></button>
                 </div>
             </div>
-            <div>
+            <div className={styles.p}>
                 <p>{content}</p>
             </div>
         </div>

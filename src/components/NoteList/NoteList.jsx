@@ -2,6 +2,7 @@ import { Note } from '../Note/Note'
 import styles from './NoteList.module.css'
 import { useState } from 'react'
 import { Modal } from '../Modal/Modal'
+import UpdateForm from '../UpdateForm/UpdateForm'
 
 export const NoteList = ({ data, setNotes }) => {
     const [isOpen, setIsOpen] = useState(false)
@@ -58,34 +59,15 @@ export const NoteList = ({ data, setNotes }) => {
                 setIsOpen(false)
                 setEditingNote(null)
             }}>
-                <div className={styles.editForm}>
-                    <h2>Редактировать заметку</h2>
-                        <label htmlFor="teme">Тема</label>
-                        <input
-                            id='teme'
-                            type="text"
-                            value={editForm.title}
-                            onChange={(e) => {
-                                setEditForm({ ...editForm, title: e.target.value })
-                                setError('')
-                            }}
-                            className={styles.input}
-                        />
-                        {Boolean(error.length) && <span className={styles.error}>{error}</span>}
-                        <label htmlFor="text">Содержание</label>
-                        <textarea
-                            id='text'
-                            value={editForm.content}
-                            onChange={(e) => {
-                                setEditForm({ ...editForm, content: e.target.value })
-                                setErrorC('')
-                            }}
-                            className={styles.textarea}
-                            rows={5}
-                        />
-                        {Boolean(errorC.length) && <span className={styles.error}>{errorC}</span>}
-                    <button className={styles.button} onClick={handleSave}>Сохранить</button>
-                </div>
+                <UpdateForm 
+                    editForm={editForm} 
+                    setEditForm={setEditForm}
+                    handleSave={handleSave}
+                    error={error}
+                    errorC={errorC}
+                    setError={setError}
+                    setErrorC={setErrorC}
+                    />
             </Modal>
         </>
     )

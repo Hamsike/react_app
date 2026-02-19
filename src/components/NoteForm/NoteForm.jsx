@@ -1,11 +1,14 @@
 import { useState } from 'react'
 import styles from './NoteForm.module.css'
+import { memo } from 'react'
+import { useStore } from '../../store'
 
-export const NoteForm = ({addNote}) => {
+export const NoteForm = memo(() => {
     const [title, setTitle] = useState('')
     const [content, setContent] = useState('')
     const [error, setError] = useState('')
     const [errorC, setErrorC] = useState('')
+    const addNote = useStore(store => store.addNote)
 
     const submit = (event) => {
         event.preventDefault()
@@ -53,4 +56,4 @@ export const NoteForm = ({addNote}) => {
             <button className={styles.button} onClick={submit}>Добавить заметку</button>
         </form>
     )
-}
+})
